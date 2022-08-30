@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import image from './image/landscape.webp';
+// import './App.css';
+import './style.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return(
+<body>
+  <div className='card'>
+    <div className='image'>
+<img src={image} alt=""/>
+</div>
+<section>
+<div>
+<h2>Fire Up Your Motivation</h2>
+</div>
+<div className='paragraph'>
+<p>When striving towards a goal, you must focus on what you want to obtain and avoid the impulse to go back to what you know and to what is comfortable </p>
+<p>by <a href="./">Kyle Patterson </a></p>
+</div>
+<div className='btn'>
+  <button>Read article</button>
+</div>
+</section>
+  </div>
+</body>
   );
 }
 
